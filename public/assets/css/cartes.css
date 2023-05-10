@@ -1,0 +1,158 @@
+
+.titre-carte {
+    text-align: center;
+}
+
+
+.container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+.menu {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.menu-group-heading {
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+    margin-top: 10px;
+}
+
+.menu-group-heading {
+
+    text-align: left;
+
+    font-weight: bold;
+}
+
+.menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+.menu-item {
+
+    display: flex;
+}
+
+.menu-item-image {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+    margin-left: 10px;
+    border-radius: 50%;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+img:hover {
+    -webkit-transform: scale(1.81);
+    -ms-transform: scale(.81);
+    transform: scale(.81);
+    -moz-transform: scale(.81);
+    -o-transform: scale(.81);
+}
+
+.menu-item-text {
+
+    flex-grow: 1;
+}
+
+.menu-item-heading {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+
+}
+
+.menu-item-titre {
+
+    margin-right: 1.5em;
+    font-size: 30px;
+}
+
+.menu-item-description {
+
+    text-align: justify;
+}
+
+.menu-item-price {
+
+    color: darkred;
+    font-size: 20px;
+}
+
+
+@media only screen and (min-width:992px) and (max-width:1200px) {
+
+    .container {
+        width: 970px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+    .container {
+        width: 750px;
+    }
+
+    .menu-groupe {
+
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width:767px) {
+
+    .container {
+        width: 320px;
+    }
+
+    .menu-groupe {
+
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item {
+
+        flex-direction: column;
+
+    }
+
+
+
+    .menu-item {
+
+        display: flex;
+    }
+
+    .menu-item-image {
+        width: 100px;
+        height: 100px;
+
+    }
+
+
+
+}
+
+
+

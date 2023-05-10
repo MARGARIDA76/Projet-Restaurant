@@ -1,0 +1,46 @@
+.main-menus {
+    margin-top: 3vw;
+    text-align: center;
+
+}
+
+
+.all-menus {
+    text-align: center
+}
+
+.all-menus__description {
+    margin-top: 10vw
+}
+
+
+.all-menus__description--title {
+    margin-top: 4w;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: .5vw
+}
+
+.all-menus__description--text {
+    margin-top: 2.5vw;
+    text-align: center
+}
+
+.all-menus__description--price {
+    color: darkred;
+    margin-top: 1.5vw;
+    text-align: center
+}
+
+.all-menus__category {
+    margin-top: 3.5vw;
+     font-size: 30px;
+}
+
+
+
+li {
+    list-style: none;
+}
+
+

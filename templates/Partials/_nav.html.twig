@@ -1,0 +1,49 @@
+
+
+<nav class="navbar bg-light fixed-stactic">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Quai Antique</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="width:25%">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{ path('app_home') }}">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_cartes') }}">Carte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_menus') }}">Menus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_visiteurs') }}">Visiteur</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_reservations') }}">Reservation</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{{ path('app_reservations') }}" role="button" data-bs-toggle="dropdown"> Mon Compte</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ path('app_login') }}">Connexion</a>
+            </li>
+            <li><a class="dropdown-item" href="{{ path('app_compte') }}">S'inscrire</a>
+            </li>
+            <li><a class="dropdown-item">Gerer ma reservation</a>
+            </li>
+            <li><a class="dropdown-item" href="{{ path('app_logout') }}">Déconnexion</a>
+            </li>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

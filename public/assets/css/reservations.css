@@ -1,0 +1,50 @@
+  .horaire {
+      text-align: center;
+      font-family: "sans-serif";
+      color: black;
+      font-size: 20px;
+  }
+
+  .grid-container {
+      display: grid;
+      grid-template-columns: 100px 100px 100px 100px 100px 100px;
+      gap: 10px;
+      padding: 10px;
+      justify-content: center;
+      margin-top: 15px;
+
+  }
+
+  .grid-container>div {
+      background-color: rgb(100, 5, 5);
+      text-align: center;
+      padding: 20px 0;
+      color: white;
+      font-size: 20px;
+
+  }
+
+ h1  .horaire .center{
+
+    margin-top: 100px;
+  }
+
+
+  @media only screen and (max-width:767px) {
+
+      .grid-container {
+          width: 100%;
+      }
+
+
+      .grid-container {
+          display: grid;
+
+          grid-template-columns: 100px 100px;
+
+      }
+    }
+
+
+
+  
